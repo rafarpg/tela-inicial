@@ -20,6 +20,10 @@ body{
 }
 .imagem{
     animation: aparecer 3s;
+    height: 610px;
+    width: 1067px;
+    opacity: 1;
+    position: absolute;
 }
 .texto1{
     position: absolute;
