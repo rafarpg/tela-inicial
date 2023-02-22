@@ -12,6 +12,22 @@ body{
     justify-content: center;
     align-items: center;
 }
+.lupa
+{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 115px;
+    animation: fadeInRight 2s;
+}
+.menu_icone
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 100px;
+    animation: fadeInRight 2s;
+}
 .fundo_tela{
     background-color: rgb(56, 55, 55);
     width: 100vw;
@@ -24,11 +40,13 @@ body{
 .fundo_texto_m{
     background-color: rgba(253, 173, 0, 0.6);
     height: 5vh;
-    width: 90vw;
+    width: 80vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    padding-left: 20px;
+    animation: fadeInRight 2s;
 }
 .imagem{
     animation: aparecer 3s;
@@ -41,7 +59,6 @@ body{
 {   
     width: 33.5vw;
     height: 80vh;
-    background-color: black;
 }
 .texto1
 {
@@ -49,13 +66,14 @@ body{
     color: rgb(251, 255, 0);
     width: 33.5vw;
     height: 30vh;
-    animation: fadeInDownBig 2s;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: top;
     text-align: center;
     padding-top: 60px;
+    animation: fadeInDownBig 2s;
+    animation: flash 4s infinite;
 }
 .texto2
 {
@@ -63,12 +81,24 @@ body{
     width: 400px;
     height: 90px;
     background-color: orangered;
-    text-align: center;
+/*   text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: top;
     text-align: center;
+    padding-left: 20px; 
+*/   
+    position: absolute;
+    top: 500px;
+    right:60px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    color: white;
+    animation: pulse 4s;
 }
 /*
 .texto2
