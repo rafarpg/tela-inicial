@@ -6,7 +6,11 @@ body{
 .fundo_menu{
     width: 100vw;
     height: 20vh;
-    background-color: rgba(223, 111, 7, 0.973);
+    background-color: rgba(253, 135, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .fundo_tela{
     background-color: rgb(56, 55, 55);
@@ -14,9 +18,17 @@ body{
     height: 80vh;
     display: flex;
     flex-direction: row;
+    justify-content: right;
+    align-items: right;
+}
+.fundo_texto_m{
+    background-color: rgba(253, 173, 0, 0.6);
+    height: 5vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: left;
 }
 .imagem{
     animation: aparecer 3s;
@@ -25,17 +37,42 @@ body{
     opacity: 1;
     position: absolute;
 }
-.texto1{
-    position: absolute;
-    font-size: 40px;
+.fundo_tela2
+{   
+    width: 33.5vw;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+}
+.texto1
+{
+    font-size: 65px;
     color: rgb(251, 255, 0);
-    top: 400px;
-    left: 2000px;
+    width: 100%;
+    height: 500px;
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: top;
+    background-color: brown;
+
+    animation: fadeInDownBig 2s;
+}
+.texto2
+{
+    font-size: 30px;
+    width: 400px;
+    height: 90px;
+    background-color: orangered;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: bottom;
+    align-items: top;
 }
 @keyframes aparecer {
     from { opacity: 0; }
