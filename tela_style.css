@@ -16,6 +16,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: left;
 }
 .imagem{
     animation: aparecer 3s;
@@ -27,9 +28,6 @@ body{
     top: 400px;
     left: 2000px;
     text-align: center;
-}
-.texto{
-    background-color: blue;
     display: flex;
     flex-direction: row;
     justify-content: center;
