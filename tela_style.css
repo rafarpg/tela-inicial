@@ -11,6 +11,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .lupa
 {
@@ -36,6 +37,7 @@ body{
     flex-direction: row;
     justify-content: right;
     align-items: right;
+    position: relative;
 }
 .fundo_texto_m{
     background-color: rgba(253, 173, 0, 0.6);
@@ -50,15 +52,17 @@ body{
 }
 .imagem{
     animation: aparecer 3s;
-    height: 610px;
-    width: 1067px;
+    height: 80vh;
+    width: 65vw;
     opacity: 1;
     position: absolute;
+    z-index: 1;
 }
 .fundo_tela2
 {   
     width: 33.5vw;
     height: 80vh;
+    position: relative;
 }
 .texto1
 {
@@ -75,6 +79,7 @@ body{
     animation: fadeInDownBig 2s;
     animation: flash 4s infinite;
     animation: aparecer 3s;
+    z-index: 3;
 }
 .texto2
 {
@@ -101,6 +106,7 @@ body{
     color: white;
     animation: pulse 4s;
     animation: aparecer 3s;
+    z-index: 2;
 }
 .texto2:hover
 {
