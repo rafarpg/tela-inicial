@@ -74,6 +74,7 @@ body{
     padding-top: 60px;
     animation: fadeInDownBig 2s;
     animation: flash 4s infinite;
+    animation: aparecer 3s;
 }
 .texto2
 {
@@ -99,6 +100,14 @@ body{
     border-radius: 1rem;
     color: white;
     animation: pulse 4s;
+    animation: aparecer 3s;
+}
+.texto2:hover
+{
+    width: 400px;
+    height: 90px;
+    border-color: azure;
+    border: solid;
 }
 /*
 .texto2

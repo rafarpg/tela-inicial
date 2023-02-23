@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<meta http-equiv="refresh" content="4; URL='tela_animacao.html'">
+<style>
+body {
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(236, 120, 12), rgb(235, 234, 229));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+.planeta
+{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: gira 3s linear infinite;
+}
+.bike
+{
+    position: absolute;
+    left: 47%;
+    top: 28%;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+  @keyframes gira {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+  </style>
+<body>
+    <div class="container">
+        <img src="bike.png" class="bike">
+        <img src="planeta.webp" class="planeta">
+    </div>
+</body>
+</html>
