@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ja tem uma conta?</title>
+</head>
+<style>
+body{
+    margin: 0px;
+    overflow: hidden;
+}
+.fundo_menu{
+    width: 100vw;
+    height: 20vh;
+    background-color: rgba(253, 135, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.lupa
+{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 115px;
+    animation: fadeInRight 2s;
+}
+.menu_icone
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 100px;
+    animation: fadeInRight 2s;
+}
+.fundo_tela{
+    background-color: rgb(56, 55, 55);
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+
+}
+.fundo_texto_m{
+    background-color: rgba(253, 173, 0, 0.6);
+    height: 5vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+}
+.imagem{
+    height: 80vh;
+    width: 65vw;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+}
+.fundo_tela2
+{   
+    width: 33.5vw;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+.logo
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+.texto1
+{
+    font-size: 50px;
+    width: 300px;
+    height: 75px;
+    background-color: orangered;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.texto1:hover
+{
+    width: 300px;
+    height: 73px;
+    border-color: azure;
+    border: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+.texto2
+{
+    font-size: 50px;
+    width: 300px;
+    height: 75px;
+    background-color: orangered;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.texto2:hover
+{
+    width: 300px;
+    height: 73px;
+    border-color: azure;
+    border: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+</style>
+
+<body>
+        <div class="fundo_menu">
+            <img src="lupa-branca.webp" class="lupa">
+            <img src="menu_icone.png" class="menu_icone">
+            <div class="fundo_texto_m">
+                pesquisar
+            </div>
+        </div>
+        <div class="imagem">
+            <img src="melhor-mountain-bike (1).png" id="minha-imagem" class= "imagem">
+        </div>
+        <div class="fundo_tela">
+            <div class="fundo_tela2"> 
+                <div class="espacinho"></div>
+                <img src="logo_ppe.png" class="logo">      
+                <a href="cadastro.html" class="texto1" id="cadastro"target="_self">Cadastre-se</a>
+                <a href="tela_login.html" class="texto2" id="login" target="_self">Entrar</a>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>
