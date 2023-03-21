@@ -27,7 +27,7 @@ body
     width: 200px;
     height: 200px;
     z-index: 2;
-    animation: gira 2s linear infinite;
+    animation: gira 3s linear infinite;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -45,7 +45,7 @@ body
   height: 100%;
   background-color: rgb(60, 177, 14);
   position: absolute;
-  animation: carregando 6s infinite;
+  animation: carregando 5s infinite;
 }
   @keyframes gira {
 	0% {
