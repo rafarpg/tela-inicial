@@ -1,0 +1,62 @@
+body 
+{
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  .container 
+  {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(236, 120, 12), rgb(235, 234, 229));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+.roda
+{
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    animation: gira 2s linear infinite;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.barra
+{
+  width: 50vw;
+  height: 20px;
+  background-color: whitesmoke;
+  position: relative;
+}
+.carregamento
+{
+  height: 100%;
+  background-color: rgb(60, 177, 14);
+  position: absolute;
+  animation: carregando 6s infinite;
+}
+  @keyframes gira {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes carregando{
+    0% { width: 0%; } 
+    100% { width: 100%}
+}

@@ -4,52 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calma ta carregando zé</title>
 </head>
-<style>
-body {
-    margin: 0px;
-    font-family: Helvetica, sans-serif;
-    overflow: hidden;
-  }
-  .container {
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(to bottom right, rgb(236, 120, 12), rgb(235, 234, 229));
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-.roda
-{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    animation: gira 2s linear infinite;
-    border-radius: 30%;
-}
-.bike
-{
-    width: 750px;
-    height: 500px;
-}
-  @keyframes gira {
-	0% {
-		transform: rotate(0);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-  </style>
+<meta http-equiv="refresh" content="5; URL='tela_animacao.html'">
+<link rel="stylesheet" type="text/css" href="loading.css">
 <body>
     <div class="container">
-        <img src="bike_loading.png" class="bike">
+      <div class="box">
         <img src="307316.svg" class="roda">
+      </div>
+      <div class="barra">
+        <div class="carregamento"></div>
+      </div>
     </div>
 </body>
 </html>
