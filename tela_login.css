@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(236, 120, 12), rgb(235, 234, 229));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+      border: 0;
+      border-radius: 2rem;
+      width: 300px;
+      height: 300px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }  
+   
+  p#enunciado{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: rgb(177, 176, 175);
+    font-weight: bolder;
+  }
+  .caixa {
+    border: 0;
+    border-radius: 1rem;
+    background-color: rgba(124, 124, 124, 0.342);
+    height: 2.5rem;
+    width: 50%;
+    display: block;
+    margin: .4rem;
+    text-align: center;
+  }
+  .caixa:hover{
+    background-color: rgba(204, 174, 174, 0.712);
+  }
+  .botao {
+    border: 0;
+    border-radius: 1rem;
+    display: block;
+    height: 2.5rem;
+    width: 50%;
+    margin: .4rem;
+    background-color: lightslategrey;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .botao:hover{
+  background-color: rgba(105, 160, 134, 0.589);
+  cursor: pointer;
+  }
+  .link{
+    text-decoration: none;
+    color: rgb(86, 152, 226);
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  a:hover{
+    color: rgba(219, 49, 19, 0.678);
+  }
