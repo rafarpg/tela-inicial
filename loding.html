@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<meta http-equiv="refresh" content="4; URL='tela_animacao.html'">
 <style>
 body {
     margin: 0px;
     font-family: Helvetica, sans-serif;
+    overflow: hidden;
   }
   .container {
     width: 100vw;
@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-.planeta
+.roda
 {
     width: 200px;
     height: 200px;
@@ -29,16 +29,13 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    animation: gira 3s linear infinite;
+    animation: gira 2s linear infinite;
+    border-radius: 30%;
 }
 .bike
 {
-    position: absolute;
-    left: 47%;
-    top: 28%;
-    width: 80px;
-    height: 80px;
-    z-index: 1;
+    width: 750px;
+    height: 500px;
 }
   @keyframes gira {
 	0% {
@@ -51,8 +48,8 @@ body {
   </style>
 <body>
     <div class="container">
-        <img src="bike.png" class="bike">
-        <img src="planeta.webp" class="planeta">
+        <img src="bike_loading.png" class="bike">
+        <img src="307316.svg" class="roda">
     </div>
 </body>
 </html>
