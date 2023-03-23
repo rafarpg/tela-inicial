@@ -49,6 +49,7 @@ body{
     align-items: center;
     padding-left: 20px;
     animation: fadeInRight 2s;
+    box-shadow: 1px 1px black;
 }
 .imagem{
     animation: aparecer 3s;
@@ -86,15 +87,7 @@ body{
     font-size: 30px;
     width: 400px;
     height: 90px;
-    background-color: orangered;
-/*   text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: top;
-    text-align: center;
-    padding-left: 20px; 
-*/   
+    background-color: orangered;  
     position: absolute;
     top: 450px;
     right:60px;
@@ -110,25 +103,13 @@ body{
 }
 .texto2:hover
 {
-    width: 400px;
-    height: 90px;
+    
+    width: 396px;
+    height: 86px;
     border-color: azure;
-    border: solid;
+    border: solid 2px;
+    cursor: pointer;
 }
-/*
-.texto2
-{
-    font-size: 30px;
-    width: 400px;
-    height: 90px;
-    background-color: orangered;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: bottom;
-    align-items: top;
-}
-*/
 @keyframes aparecer {
     from { opacity: 0; }
     to { opacity: 1; }
