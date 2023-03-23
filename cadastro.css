@@ -45,7 +45,7 @@ body {
     text-align: center;
   }
   .caixa:hover{
-    background-color: rgba(204, 174, 174, 0.712);
+    background-color: rgba(165, 152, 152, 0.712);
   }
   .botao {
     border: 0;
