@@ -8,13 +8,13 @@ body {
     background-image: linear-gradient(to bottom right, rgb(236, 120, 12), rgb(235, 234, 229));
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .logo
   {
-      width: 180px;
-      height: 180px;
+      width: 150px;
+      height: 150px;
   }
   .box {
       border: 0;
@@ -27,7 +27,19 @@ body {
       justify-content: space-between;
       align-items: center;
   }  
-   
+  .box2
+  {
+    border: 0;
+    border-radius: 2rem;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
   p#enunciado{
     text-transform: uppercase;
     font-size: 15px;
@@ -52,7 +64,7 @@ body {
     border-radius: 1rem;
     display: block;
     height: 2.5rem;
-    width: 50%;
+    width: 5rem;
     margin: .4rem;
     background-color: lightslategrey;
     color: whitesmoke;
@@ -67,14 +79,34 @@ body {
   background-color: rgba(105, 160, 134, 0.589);
   cursor: pointer;
   }
+  .limpa
+  {
+    border: 0;
+    border-radius: 1rem;
+    display: block;
+    height: 2.5rem;
+    width: 5rem;
+    margin: .4rem;
+    background-color: lightslategrey;
+    color: whitesmoke;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 15px;
+  }
+  .limpa:hover
+  {
+    background-color: rgba(160, 116, 105, 0.589);
+    cursor: pointer;
+  }
   .link{
     text-decoration: none;
     color: rgb(86, 152, 226);
-    font-size: .8rem;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 15px;
     margin-bottom: 1rem;
-  }
-  a:hover{
-    color: rgba(219, 49, 19, 0.678);
   }
