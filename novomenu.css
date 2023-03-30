@@ -9,7 +9,7 @@
 body
 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     min-height: 30vh;
     background: rgb(218, 166, 24);
@@ -17,13 +17,14 @@ body
 .navegacao
 {
     position: relative;
-    height: 500px;
+    height: 100vh;
     background-color: rgb(48, 47, 47);
     width: 70px;
     box-shadow: 10px 0 0 rgb(218, 112, 13);
     border-left: 10px solid rgb(48, 47, 47);
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
+    z-index: 2;
 }
 .navegacao:hover
 {
@@ -93,7 +94,7 @@ body
     height: 30px;
     background: rgb(48, 47, 47);
     border-radius: 50%;
-    box-shadow: 15px 1 rgb(48, 47, 47);
+    box-shadow: 15px 15px rgb(218, 112, 13);
 }
 .navegacao ul li.active a::after
 {
@@ -105,5 +106,5 @@ body
     height: 30px;
     background: rgb(48, 47, 47);
     border-radius: 50%;
-    box-shadow: 15px -15px 0 rgb(48, 47, 47);
+    box-shadow: 15px -15px 0 rgb(218, 112, 13);
 }
