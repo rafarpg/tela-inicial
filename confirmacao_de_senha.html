@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha</title>
+<script src="validate.js" defer></script>
+</head>
+<body>
+    <h3> Senha</h3>
+    <form name="cadastro" action="" onsubmit="senhaOK();" method="POST" accept-charset="UTF-8">
+        <label>Digite uma senha: </label>
+        <input type="password" id="senha" required onchange="validarconfirmacao();">
+        <br><br>
+        <label>Confirme sua senha:</label> 
+        <input type="password" id="confirmacao" required onchange="validarconfirmacao();">
+        <button onclick="validate();">OK</button>
+</body>
+</html>
