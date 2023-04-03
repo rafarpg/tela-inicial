@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela</title>
+</head>
+<link rel="stylesheet" type="text/css" href="suporte.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<body>
+    <div class="navegacao">
+        <ul>
+            <li class = "list active">
+                <a href="#">
+                    <span class="icon"><ion-icon name="menu-outline"></ion-icon></span>
+                    <span class="titulo">Home</span>
+                </a>
+            </li>
+            <li class = "list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <span class="titulo">Perfil</span>
+                </a>
+            </li>
+            <li class = "list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="logo-whatsapp"></ion-icon></span>
+                    <span class="titulo">Suporte</span>
+                </a>
+            </li>  
+            <li class = "list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                    <span class="titulo">Peças</span>
+                </a>
+            </li>  
+            <li class = "list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="titulo">Configurações</span>
+                </a>
+            </li>
+            <li class = "list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="bicycle-outline"></ion-icon></span>
+                    <span class="titulo">Personalizar</span>
+                </a>
+            </li>   
+            <li class = "list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="titulo">Logout</span>
+                </a>
+            </li> 
+        </ul>
+    </div>
+    <div class="fundo_menu">
+        <img src="lupa-branca.webp" class="lupa">
+        <div class="fundo_texto_m">
+            Pesquisar
+        </div>
+    </div>
+    <img src="melhor-mountain-bike (1).png" id="minha-imagem" class= "imagem">
+    <div class="fundo_tela">
+
+        <div class="fundo_tela2">        
+          Fale conosco: 
+          <input class="mensagem" type="text" id="mensagem"> 
+          <button class="botao_enviar" onclick="Enviar();">Enviar</button>
+          <div class="resposta" id="resposta">  </div>
+    </div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+<script>
+
+  topico = "ppe/mensagem";  // Variável que ficará no servidor MQTT
+
+  // Conexão:
+  client = new Paho.MQTT.Client("broker.hivemq.com", Number(8000), "");
+
+  // Funções executadas quando a conexão é perdida e quando uma mensagem chega:
+  client.onConnectionLost = ConexaoPerdida;
+  client.onMessageArrived = MensagemRecebida;
+
+  // Função chamada quando a conexão for realizada:
+  client.connect({onSuccess:Conectar});
+
+  // A função Conectar deve criar a variável (tópico) no computador remoto:
+  function Conectar() {
+    
+    client.subscribe(topico);  // Tópico (variável) criado no servidor MQTT
+    
+  }
+  
+  function ConexaoPerdida(responseObject) {
+    if (responseObject.errorCode !== 0) {
+      resposta.innerHTML += "Desconectado";
+    }
+  }
+
+  // Função executada quando a variável (tópico) no servidor receber uma mensagem:
+  function MensagemRecebida(message) {
+      resposta.innerHTML += "<br><br>" + message.payloadString;
+  }
+
+  function Enviar()
+  {
+    texto = mensagem.value;
+
+
+    message = new Paho.MQTT.Message(texto);
+    message.destinationName = topico;
+    client.send(message);
+  }
+</script>
+<script >
+  const list = document.querySelectorAll('.list');
+  function activeLink()
+  {
+      list.forEach((item) =>
+      item.classList.remove('active'));
+      this.classList.add('active');
+  }
+      list.forEach((item) =>
+      item.addEventListener('click', activeLink));
+</script>
+</html>
