@@ -1,0 +1,5 @@
+git config --global user.email “rafaelpassosgol@gmail.com”
+git config --global user.name “rafarpg”
+
+<input type="reset" name="limpar"  value="Limpar" class="botao">
+<a href="tela_login.html" type= submit class="botao">Cadastrar</a>
