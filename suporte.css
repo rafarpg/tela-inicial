@@ -17,6 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    box-shadow: 1px 1px 1px black;
 }
 .lupa
 {
@@ -247,13 +248,14 @@ body
 {
     margin: 5px;
     width: 400px;
-    height: 200px;
+    height: 100px;
     text-align: top;
     align-items: top;
     align-content: top;
     display: flex;
     justify-content: right;
     justify-items: top;
+    font-size: x-large;
 }
 .botao_enviar
 {
@@ -272,4 +274,12 @@ body
     top:50vh;
     color: #ffff;
     font-size: xx-large;
+}
+.fundo_resposta
+{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 3rem;
+    border: solid rgba(129, 127, 127, 0.973);
+    margin: 5PX;
 }
