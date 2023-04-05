@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     overflow: hidden;
+    background-color: rgb(56, 55, 55);
 }
 .tela
 {
@@ -286,4 +287,11 @@ body
     border-radius: 10px;
     border: solid rgba(129, 127, 127, 0.973);
     margin: 5PX;
+}
+.fundo_fake
+{
+    opacity: 35%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
