@@ -1,200 +1,8 @@
 body{
     margin: 0px;
     overflow: hidden;
+    background-color: rgb(55, 55, 55);
 }
-.tela
-{
-    margin:0;
-    display: flex;
-    flex-direction: column;
-}
-.fundo_menu{
-    width: 100vw;
-    height: 22vh;
-    background-color: rgba(253, 135, 0);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    box-shadow: 1px 1px 1px black;
-}
-.lupa
-{
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    right: 115px;
-}
-.menu_icone
-{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 100px;
-}
-.fundo_tela{
-    background-color: rgb(56, 55, 55);
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: right;
-    position: relative;
-}
-.fundo_texto_m{
-    background-color: rgba(228, 226, 222, 0.89);
-    height: 5vh;
-    width: 60vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    padding-left: 20px;
-    box-shadow: 1px 1px 1px black;
-    border-radius: 10px;
-}
-.imagem{
-    height: 80vh;
-    width: 65vw;
-    opacity: 1;
-    position: absolute;
-    z-index: 1;
-}
-.fundo_tela2
-{   
-    width: 33.5vw;
-    height: 80vh;
-    position: relative;
-    color:azure;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-  @keyframes aparecer {
-    from { opacity: 0; }
-    to { opacity: 1; }
-    from{
-        transform: translateX(-500px);
-    }
-    to{
-        transform: translateX(400);
-    }
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap');
-
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body
-{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    min-height: 30vh;
-    background: rgb(218, 166, 24);
-}
-.navegacao
-{
-    position: absolute;
-    height: 100vh;
-    background-color: rgb(48, 47, 47);
-    width: 70px;
-    box-shadow: 10px 0 0 rgba(253, 135, 0);
-    border-left: 10px solid rgb(48, 47, 47);
-    overflow: hidden;
-    transition: 0.5s;
-    z-index: 3;
-    left: -10px;
-}
-.navegacao:hover
-{
-    width:300px;
-}
-.navegacao ul 
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 5px;
-    padding-top:  40px;
-}
-.navegacao ul li
-{
-    position: relative;
-    list-style: none;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-
-}
-.navegacao ul li a
-{
-    position: relative;
-    display: flex;
-    width: 100%;
-    text-decoration: none;
-    color: white;
-}
-.navegacao ul li a .icon
-{
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 70px;
-}
-.navegacao ul li a .icon ion-icon
-{
-    position: relative;
-    font-size: 1.5rem;
-    z-index: 1;
-}
-.navegacao ul li a .titulo
-{
-    position: relative;
-    display: block;
-    padding-left: 10px;
-    height: 60px;
-    line-height: 60px;
-    white-space: nowrap;
-}
-.navegacao ul li.active
-{
-    background: rgba(253, 135, 0);
-}
-.navegacao ul li.active a::before
-{
-    content: '';
-    position: absolute;
-    top: -30px;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    background: rgb(48, 47, 47);
-    border-radius: 50%;
-    box-shadow: 15px 15px rgba(253, 135, 0);
-}
-.navegacao ul li.active a::after
-{
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    background: rgb(48, 47, 47);
-    border-radius: 50%;
-    box-shadow: 15px -15px 0 rgba(253, 135, 0);
-}
-*/
 .mensagem
 {
     margin: 5px;
@@ -204,14 +12,14 @@ body
     align-items: top;
     align-content: top;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     justify-items: top;
     font-size: 17px;
     border-radius: 1rem;
     border: solid rgba(129, 127, 127, 0.973);
     background-color: rgba(255, 255, 255, 0);
     color:#ffff;
-    position: relative;
+    position: absolute;
 }
 .botao_enviar
 {
@@ -221,14 +29,14 @@ body
     color:azure;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-    position: relative;
+    position: absolute;
 }
 .resposta
 {
     z-index: 5;
     color: #ffff;
     font-size: 15px;
-    position: relative;
+    position: absolute;
 }
 .fundo_resposta
 {
@@ -238,7 +46,7 @@ body
     border: solid rgba(129, 127, 127, 0.973);
     margin: 5PX;
     color: #ffff;
-    position: relative;
+    position: absolute;
 }
 .box
 {
@@ -262,7 +70,7 @@ body
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
     background-color: rgba(253, 135, 0);
     color: #ffff;
 }
@@ -271,11 +79,6 @@ body
     color: #ffff;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-}
-.fundo_fake
-{
-    z-index: -2;
-    opacity: 30%;
 }
 .icon
 {
