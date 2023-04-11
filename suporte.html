@@ -25,9 +25,24 @@
           <div class="resposta" id="resposta"></div>
       </div>
     </div>
-  </div>
-</body>
+    <img src="melhor-mountain-bike (1).png" id="minha-imagem" class= "imagem">
+    <div class="fundo_tela">
 
+        <div class="fundo_tela2">        
+          Fale conosco: 
+          <input class="mensagem" type="text" id="mensagem"> 
+          <button class="botao_enviar" onclick="Enviar();">Enviar</button>
+          <div class="fundo_resposta">
+            <div class="resposta" id="resposta">
+            </div></div>
+    </div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
 <script>
 
   topico = "ppe/suporte";  // Variável que ficará no servidor MQTT
@@ -70,5 +85,15 @@
   }
 
 </script>
-
+<script >
+  const list = document.querySelectorAll('.list');
+  function activeLink()
+  {
+      list.forEach((item) =>
+      item.classList.remove('active'));
+      this.classList.add('active');
+  }
+      list.forEach((item) =>
+      item.addEventListener('click', activeLink));
+</script>
 </html>

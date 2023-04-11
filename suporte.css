@@ -1,7 +1,6 @@
 body{
     margin: 0px;
     overflow: hidden;
-    background-color: rgb(56, 55, 55);
 }
 .tela
 {
@@ -26,7 +25,6 @@ body{
     height: 28px;
     position: absolute;
     right: 115px;
-    animation: fadeInRight 2s;
 }
 .menu_icone
 {
@@ -34,7 +32,6 @@ body{
     height: 30px;
     position: absolute;
     left: 100px;
-    animation: fadeInRight 2s;
 }
 .fundo_tela{
     background-color: rgb(56, 55, 55);
@@ -55,12 +52,10 @@ body{
     justify-content: left;
     align-items: center;
     padding-left: 20px;
-    animation: fadeInRight 2s;
     box-shadow: 1px 1px 1px black;
     border-radius: 10px;
 }
 .imagem{
-    animation: aparecer 3s;
     height: 80vh;
     width: 65vw;
     opacity: 1;
@@ -77,51 +72,6 @@ body{
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-}
-.texto1
-{
-    font-size: 65px;
-    color: rgb(251, 255, 0);
-    width: 33.5vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: top;
-    text-align: center;
-    padding-top: 60px;
-    animation: fadeInDownBig 2s;
-    animation: flash 4s infinite;
-    animation: aparecer 3s;
-    z-index: 3;
-}
-.texto2
-{
-    font-size: 30px;
-    width: 400px;
-    height: 90px;
-    background-color: orangered;  
-    position: absolute;
-    top: 450px;
-    right:60px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border-radius: 1rem;
-    color: white;
-    animation: pulse 4s;
-    animation: aparecer 3s;
-    z-index: 2;
-}
-.texto2:hover
-{
-    
-    width: 398px;
-    height: 88px;
-    border-color: azure;
-    border: solid 2px;
-    cursor: pointer;
 }
   @keyframes aparecer {
     from { opacity: 0; }
@@ -149,7 +99,6 @@ body
     min-height: 30vh;
     background: rgb(218, 166, 24);
 }
-*/
 .navegacao
 {
     position: absolute;
@@ -245,22 +194,24 @@ body
     border-radius: 50%;
     box-shadow: 15px -15px 0 rgba(253, 135, 0);
 }
+*/
 .mensagem
 {
     margin: 5px;
     width: 400px;
-    height: 100px;
+    height: 80px;
     text-align: top;
     align-items: top;
     align-content: top;
     display: flex;
     justify-content: right;
     justify-items: top;
-    font-size: x-large;
+    font-size: 17px;
     border-radius: 1rem;
     border: solid rgba(129, 127, 127, 0.973);
     background-color: rgba(255, 255, 255, 0);
-    color:#ffff
+    color:#ffff;
+    position: relative;
 }
 .botao_enviar
 {
@@ -270,15 +221,14 @@ body
     color:azure;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 .resposta
 {
     z-index: 5;
-    position: absolute;
-    left: 60vw;
-    top:50vh;
     color: #ffff;
-    font-size: xx-large;
+    font-size: 15px;
+    position: relative;
 }
 .fundo_resposta
 {
@@ -287,6 +237,54 @@ body
     border-radius: 10px;
     border: solid rgba(129, 127, 127, 0.973);
     margin: 5PX;
+    color: #ffff;
+    position: relative;
+}
+.box
+{
+    width: 35vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(253, 135, 0);
+    color: #ffff;
+    border: solid rgb(55, 55, 55);
+    margin: 5px;
+}
+.box2
+{
+    width: 35vw;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(253, 135, 0);
+    color: #ffff;
+}
+.box3
+{
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.fundo_fake
+{
+    z-index: -2;
+    opacity: 30%;
+}
+.icon
+{
+    color: #ffff;
+    top: 30px;
+    left: 20px;
+    position: absolute;
+    z-index: 9;
+    font-size: 30px;
 }
 .fundo_fake
 {
