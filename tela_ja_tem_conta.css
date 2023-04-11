@@ -40,7 +40,7 @@ body{
 
 }
 .fundo_texto_m{
-    background-color: rgba(253, 173, 0, 0.6);
+    background-color: rgba(241, 240, 238, 0.89);
     height: 5vh;
     width: 80vw;
     display: flex;
