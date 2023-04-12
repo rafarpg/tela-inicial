@@ -44,7 +44,7 @@ body{
     position: relative;
 }
 .fundo_texto_m{
-    background-color: rgba(228, 226, 222, 0.89);
+    background-color: rgba(241, 240, 238, 0.89);
     height: 5vh;
     width: 60vw;
     display: flex;
