@@ -209,11 +209,11 @@ body
     line-height: 60px;
     white-space: nowrap;
 }
-.navegacao ul li.active
+.navegacao ul li:hover
 {
     background: rgba(253, 135, 0);
 }
-.navegacao ul li.active a::before
+.navegacao ul li:hover a::before
 {
     content: '';
     position: absolute;
@@ -225,7 +225,7 @@ body
     border-radius: 50%;
     box-shadow: 15px 15px rgba(253, 135, 0);
 }
-.navegacao ul li.active a::after
+.navegacao ul li:hover a::after
 {
     content: '';
     position: absolute;
