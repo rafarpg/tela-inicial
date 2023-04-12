@@ -20,19 +20,18 @@ body{
 }
 .lupa
 {
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    right: 115px;
-    animation: fadeInRight 2s;
+    width: 35px;
+    height: 35px;
+    text-decoration: #ffff;
 }
-.menu_icone
+.box_menu
 {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 100px;
-    animation: fadeInRight 2s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 .fundo_tela{
     background-color: rgb(56, 55, 55);
