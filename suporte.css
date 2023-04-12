@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    overflow: hidden;
+    background-color: rgb(55, 55, 55);
+}
+.mensagem
+{
+    margin: 5px;
+    width: 400px;
+    height: 80px;
+    text-align: top;
+    align-items: top;
+    align-content: top;
+    display: flex;
+    justify-content: center;
+    justify-items: top;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: solid rgba(129, 127, 127, 0.973);
+    background-color: rgba(255, 255, 255, 0);
+    color:#ffff;
+    position: absolute;
+}
+.botao_enviar
+{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(223, 90, 13);
+    color:azure;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+}
+.resposta
+{
+    z-index: 5;
+    color: #ffff;
+    font-size: 15px;
+    position: absolute;
+}
+.fundo_resposta
+{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 10px;
+    border: solid rgba(129, 127, 127, 0.973);
+    margin: 5PX;
+    color: #ffff;
+    position: absolute;
+}
+.box
+{
+    width: 35vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(253, 135, 0);
+    color: #ffff;
+    border: solid rgb(55, 55, 55);
+    margin: 5px;
+}
+.box2
+{
+    width: 35vw;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(253, 135, 0);
+    color: #ffff;
+}
+.box3
+{
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.icon
+{
+    color: #ffff;
+    top: 30px;
+    left: 20px;
+    position: absolute;
+    z-index: 9;
+    font-size: 30px;
+}
+.fundo_fake
+{
+    opacity: 35%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
