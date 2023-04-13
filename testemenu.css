@@ -126,22 +126,6 @@ body{
     }
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap');
-
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body
-{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    min-height: 30vh;
-    background: rgb(218, 166, 24);
-}
-*/
 .navegacao
 {
     position: absolute;
