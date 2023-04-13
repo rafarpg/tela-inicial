@@ -1,7 +1,18 @@
 body{
     margin: 0px;
     overflow: hidden;
-    background-color: rgb(55, 55, 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(56, 55, 55);
+}
+.tela
+{
+    margin:0;
+    display: flex;
+    flex-direction: column;
 }
 .mensagem
 {
@@ -12,14 +23,14 @@ body{
     align-items: top;
     align-content: top;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     justify-items: top;
     font-size: 17px;
     border-radius: 1rem;
     border: solid rgba(129, 127, 127, 0.973);
     background-color: rgba(255, 255, 255, 0);
     color:#ffff;
-    position: absolute;
+    position: relative;
 }
 .botao_enviar
 {
@@ -29,14 +40,15 @@ body{
     color:azure;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-    position: absolute;
+    position: relative;
+    cursor: pointer;
 }
 .resposta
 {
     z-index: 5;
     color: #ffff;
     font-size: 15px;
-    position: absolute;
+    position: relative;
 }
 .fundo_resposta
 {
@@ -46,7 +58,7 @@ body{
     border: solid rgba(129, 127, 127, 0.973);
     margin: 5PX;
     color: #ffff;
-    position: absolute;
+    position: relative;
 }
 .box
 {
@@ -70,7 +82,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     background-color: rgba(253, 135, 0);
     color: #ffff;
 }
@@ -80,6 +92,11 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
 }
+.fundo_fake
+{
+    z-index: -2;
+    opacity: 30%;
+}
 .icon
 {
     color: #ffff;
@@ -88,11 +105,4 @@ body{
     position: absolute;
     z-index: 9;
     font-size: 30px;
-}
-.fundo_fake
-{
-    opacity: 35%;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
 }
